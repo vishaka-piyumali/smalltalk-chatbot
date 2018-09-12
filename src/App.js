@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import './App.css';
 import { ApiAiClient } from 'api-ai-javascript';
 //import messageHistory from './messageHistory';
-import OptusAssistant from './optus/assistant/index';
-import teamAvatar from './assets/avatar.png';
+import SmallTalkBot from './small-talk/assistant/index';
+import botAvatar from './assets/chatbot.png';
 
-const client = new ApiAiClient({accessToken: '075e802f26f741a9b3e1fec0dacac706'})
+const client = new ApiAiClient({accessToken: 'b4eef0dc9b394a09be895f58a8bf8f22'})
 
 class App extends Component {
 	constructor() {
@@ -76,10 +76,10 @@ class App extends Component {
 
 	render() {
 		return <div>
-			<OptusAssistant
+			<SmallTalkBot
 				agentProfile={{
-					teamName: 'Optus Assistant',
-					imageUrl: teamAvatar
+					teamName: 'ST1',
+					imageUrl: botAvatar
 				}}
 				isOpen={this.state.isOpen}
 				onMessageWasSent={this._onMessageWasSent.bind(this)}
