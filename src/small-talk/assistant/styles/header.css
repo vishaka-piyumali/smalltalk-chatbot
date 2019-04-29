@@ -1,8 +1,9 @@
 .sc-header {
-  background: #5641b7e3;
+  background: #301e84;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   color: white;
+  font-weight: bold;
   padding: 10px;
   box-shadow: 0 1px 4px rgba(0,0,0,.2);
   position: relative;
@@ -27,10 +28,6 @@
   font-size: 18px;
 }
 
-.sc-header--team-name:hover {
-  background: #4882ed;
-}
-
 .sc-header--close-button {
   width: 40px;
   align-self: center;
@@ -39,10 +36,12 @@
   box-sizing: border-box;
   cursor: pointer;
   border-radius: 5px;
+  opacity: 0.5;
+  transition: opacity 1s;
 }
 
 .sc-header--close-button:hover {
-  background: #4882ed;
+  opacity: 1;
 }
 
 .sc-header--close-button img {

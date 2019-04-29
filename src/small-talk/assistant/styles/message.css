@@ -18,7 +18,7 @@
 }
 
 .sc-message--content.hide-avatar .sc-message--text {
-    margin-left: 45px;
+	margin-left: 45px;
 }
 
 .sc-message--avatar {
@@ -35,7 +35,7 @@
 .sc-message--text {
   padding: 5px 10px;
   border-radius: 5px;
-  font-weight: 300;
+  font-weight: bold;
   font-size: 14px;
   line-height: 1.4;
   white-space: pre-wrap;
@@ -61,6 +61,19 @@
 
 @media (max-width: 450px) {
   .sc-message {
-    width: 92%;
+	width: 92%;
   }
+}
+
+.sc-chat-window .sc-message.fade-enter {
+    opacity: 0;
+    transform:   translate(50px,50px);
+}
+.sc-chat-window .sc-message.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 1s ease;
+    transform:   translate(0,0);
+    transition-property: transform, opacity;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.175, 0.665, 0.320, 1), linear;
 }

@@ -50,7 +50,7 @@ class App extends Component {
 
 	filterMessages (fullfillment) {
 		return fullfillment.messages.filter(function (message) {
-			return message.platform !== 'facebook';
+			return message.type === 0;
 		});
 	}
 

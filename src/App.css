@@ -1,29 +1,12 @@
 @font-face {
-	font-family: 'markpro';
-	src: url("/assets/fonts/markpro.otf");
-	src: url("/assets/fonts/markpro.eot");
-	src: url('/assets/fonts/markpro.eot?#iefix') format('embedded-opentype'),
-	url('/assets/fonts/markpro.woff') format('woff'),
-	url('/assets/fonts/markpro.ttf')  format('truetype'),
-	url('/assets/fonts/markpro.svg#svgFontName') format('svg');
-	font-style: normal;
-	-webkit-font-smoothing: subpixel-antialiased;
-	font-smoothing: subpixel-antialiased;
-	text-shadow: 0 0 0 rgba(0,0,0,0);
-	-webkit-transform: translate3d(0,0,0);
-	-moz-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
-}
-
-@font-face {
-	font-family: 'markpro-bold';
-	src: url("/assets/fonts/markpro-bold.otf");
-	src: url("/assets/fonts/markpro-bold.eot");
-	src: url('/assets/fonts/markpro-bold.eot?#iefix') format('embedded-opentype'),
-	url('/assets/fonts/markpro-bold.woff') format('woff'),
-	url('/assets/fonts/markpro-bold.ttf')  format('truetype'),
-	url('/assets/fonts/markpro-bold.svg#svgFontName') format('svg');
-	font-style: normal;
+	font-family: 'quicksand-light';
+	src: url("/assets/fonts/Quicksand-Light/Quicksand-Light.otf");
+	src: url("/assets/fonts/Quicksand-Light/Quicksand-Light.eot");
+	src: url('/assets/fonts/Quicksand-Light/Quicksand-Light.eot?#iefix') format('embedded-opentype'),
+	url('/assets/fonts/Quicksand-Light/Quicksand-Light.woff') format('woff'),
+	url('/assets/fonts/Quicksand-Light/Quicksand-Light.ttf')  format('truetype'),
+	url('/assets/fonts/Quicksand-Light/Quicksand-Light.svg#svgFontName') format('svg');
+	font-style: bold;
 	-webkit-font-smoothing: subpixel-antialiased;
 	font-smoothing: subpixel-antialiased;
 	text-shadow: 0 0 0 rgba(0,0,0,0);
@@ -33,9 +16,9 @@
 }
 
 .sc-chat-window .sc-header--team-name {
-	font-family: 'markpro-bold';
+	font-family: 'quicksand-light';
 }
 
 .sc-chat-window .sc-message {
-	font-family: 'markpro';
+	font-family: 'quicksand-light';
 }
